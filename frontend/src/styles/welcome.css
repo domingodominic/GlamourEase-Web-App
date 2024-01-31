@@ -1,0 +1,229 @@
+/* welcome.css */
+@font-face {
+  font-family: regular;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: semi-bold;
+  src: url("../fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: boldest;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+* {
+  font-family: regular;
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+.welcome--container {
+  position: relative;
+
+  background-color: #f4ffff;
+  box-shadow: "inset 0 0 0 100vw rgba(0, 0, 0, 0.5)";
+  width: 100svw;
+  height: 100%;
+}
+.welcome--container .text--background {
+  position: absolute;
+  bottom: -100px;
+
+  color: #ff840000;
+  font-weight: bolder;
+  font-size: 17rem;
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  color: #191444;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header .nav--list {
+  display: flex;
+  margin-right: 3rem;
+  gap: 2.5rem;
+  padding-left: 2rem;
+  height: 10%;
+}
+.nav--list li {
+  list-style: none;
+  cursor: pointer;
+}
+.nav--list li a {
+  position: relative;
+  text-decoration: none;
+  font-family: semi-bold;
+  color: #191444;
+  cursor: pointer;
+}
+li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: #fe8401;
+}
+li a:hover::after {
+  transition: 0.5s;
+  width: 100%;
+}
+li a:hover {
+  transition: 0.5s;
+  color: #fe8401;
+}
+
+.logo {
+  display: flex;
+  justify-content: start; /* Adjust this as needed to position the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+  font-weight: bold;
+
+  font-size: 20px;
+  padding: 20px;
+}
+
+.logo img {
+  margin-left: 10px;
+  max-width: 150px; /* Ensure the image doesn't exceed the width of the header */
+  height: 100px; /* Maintain the aspect ratio of the image */
+}
+
+.section--container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5); */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section--container .section--container--bg {
+  position: absolute;
+  background-image: url("../images/Mataura.png");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.section--container .content {
+  text-align: start;
+  padding: 0px 6rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  z-index: 2;
+  /* border-right: #fe8401 2px solid; */
+}
+.content .content--promotion {
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 4rem;
+  color: #fe8401;
+  font-family: boldest !important;
+}
+button {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fe8401;
+  z-index: 2;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #fe8401;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #fe8401;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #fe8401;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.img {
+  position: relative;
+  overflow: hidden;
+  height: 650px;
+  /* background: url("./imgbg.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.img img {
+  padding-top: 2rem;
+  width: 80%;
+  height: 650px;
+}
+
+/* about section */
+
+.about {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+.about .about--content {
+  padding: 5rem;
+}
+
+.about .about--img {
+  padding: 6rem;
+}
+.about .about--img img {
+  width: 100%;
+  height: 90%;
+}
+/* services section */
+
+/* .services {
+  padding: 20px 100px;
+} */
+.services {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.swiper {
+  width: 90%;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.swiper-pagination-bullet-active {
+  background: #ff8400 !important;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 26px !important;
+  height: 4px !important;
+  border-radius: 0px !important;
+  background: #ea9234 !important;
+}

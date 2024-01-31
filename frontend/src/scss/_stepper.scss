@@ -1,0 +1,38 @@
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed,
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #ff9a9c !important;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  color: #ff9a9c !important;
+  font-family: semi-bold !important;
+}
+.stepper--container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 565px;
+  max-height: 565px;
+  padding: 20px 10px;
+
+  &::-webkit-scrollbar {
+    padding: 2rem;
+    width: 3px;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ff9a9c;
+
+    height: 20px;
+  }
+}
+
+.css-1hv8oq8-MuiStepLabel-label.Mui-active {
+  color: rgb(115, 115, 115) !important;
+  font-weight: 500 !important;
+}
+.css-1hv8oq8-MuiStepLabel-label.Mui-completed {
+  color: rgb(126, 126, 126) !important;
+  font-weight: bold !important;
+}
+.css-1hv8oq8-MuiStepLabel-label {
+  color: rgb(126, 126, 126) !important;
+}

@@ -1,0 +1,9 @@
+.municipality--list {
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset 0 0 0 2px #ff9a9c;
+  }
+}
+.service--list {
+  margin: 0 !important;
+}

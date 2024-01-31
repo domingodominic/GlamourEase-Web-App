@@ -1,0 +1,182 @@
+.css-1u23akw-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: #ff9a9c !important;
+}
+.css-umzx0k-MuiClock-pin {
+  background-color: #ff9a9c !important;
+}
+.css-12t0dn4-MuiClockPointer-thumb {
+  background-color: #ff9a9c !important;
+  border: #ff9a9c 16px solid !important;
+}
+.css-eg3pzz-MuiClockPointer-thumb {
+  background-color: #ff9a9c !important;
+  border: #ff9a9c 16px solid !important;
+}
+.css-dplwbx-MuiPickersCalendarHeader-label {
+  color: #ff9a9c !important;
+  font-family: semi-bold !important;
+}
+.css-d0vs79-MuiClockPointer-root {
+  background-color: #ff9a9c !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: #ff9a9c;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #ff9a9c !important;
+}
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root:focus {
+  color: #ff9a9c !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #ff9a9c !important;
+}
+.timelist--container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 240px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.timelist {
+  list-style: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #ff9a9c;
+  font-size: 11px;
+  font-family: semi-bold;
+  color: white;
+  cursor: pointer;
+}
+
+.date--card--container {
+  padding: 5px;
+}
+.date--day {
+  font-family: boldest;
+  color: #ff9a9c;
+}
+.date--week,
+.date--year {
+  font-family: regular;
+}
+
+.select-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.active {
+  background-color: #f0f0f0;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+}
+.time--available--container {
+  position: absolute;
+  padding-left: 1rem;
+  bottom: -300px;
+  display: flex;
+  gap: 1rem;
+}
+.available--time--item {
+  background-color: #ff9a9c;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: semi-bold;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    transition: all 0.3s;
+    color: #ff9a9c;
+    box-shadow: inset 0 0 0 1px #ff9a9c;
+  }
+}
+
+.time--container-flex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.date--card--light {
+  box-shadow: 0 0 12px rgba(134, 134, 134, 0.24);
+  padding: 20px 0px;
+
+  cursor: grab;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: inset 0 0 0 2px #ff9a9c;
+    transition: all 0.3s;
+  }
+}
+.date--card--dark {
+  box-shadow: 0 0 12px rgba(232, 232, 232, 0.24);
+  padding: 20px 0px;
+
+  cursor: grab;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: inset 0 0 0 2px #ff9a9c;
+    transition: all 0.3s;
+  }
+}
+.time--unavailable--light {
+  padding-left: 2rem;
+  color: rgb(125, 125, 125);
+  font-family: regular;
+}
+.time--unavailable--dark {
+  padding-left: 2rem;
+  color: rgb(201, 201, 201);
+  font-family: regular;
+}
+
+.open--calendar {
+  color: #ff9a9c;
+  text-align: end;
+  padding-right: 3rem;
+  margin-bottom: 0;
+}

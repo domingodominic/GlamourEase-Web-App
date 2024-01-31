@@ -1,0 +1,82 @@
+.customer--profile--container {
+  height: 100%;
+  .customer--header--profile {
+    border-radius: 0px 0px 30px 30px;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .title {
+    text-align: start;
+    font-family: semi-bold;
+    color: #191444;
+  }
+  .customer--name {
+    font-size: 25px;
+    margin-top: 1rem;
+    font-family: semi-bold;
+    color: #191444;
+  }
+  .customer--email {
+    padding-bottom: 1rem;
+    font-size: 12px;
+    font-style: italic;
+    color: #878787;
+  }
+}
+//profile info style
+
+.profile--info--container {
+  margin: 0rem 10rem 0rem 10rem;
+  justify-content: center;
+
+  .profile--right--info {
+    justify-content: center;
+    padding: 50px 10px;
+    .image--container {
+      background-image: url("../images/profile--info.jpeg");
+      background-size: cover;
+      width: 400px;
+      height: 100px;
+    }
+  }
+}
+
+.personal--info,
+.private--info {
+  color: #191444;
+
+  width: 100%;
+  margin: 0 auto;
+  text-align: start;
+
+  .profile--join,
+  .private--info--item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    .item--title {
+      color: #878787;
+      font-size: 13px;
+    }
+    .item--value {
+      border-bottom: 1px solid rgb(163, 163, 163);
+      padding-bottom: 0.5rem;
+      font-size: 13px;
+    }
+  }
+}
+.logout--btn {
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: #ff9a9c;
+}
+
+.profile--right--info {
+  img {
+    width: 500px;
+    height: 150px;
+  }
+}

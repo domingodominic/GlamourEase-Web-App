@@ -1,0 +1,50 @@
+.book--details--container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: #00000070;
+  height: 100%;
+  width: 100%;
+  .book--details {
+    text-align: start;
+    animation: 0.5s forwards BookDetails;
+    max-height: 400px;
+    width: 350px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .item {
+      border-bottom: dashed;
+      border-color: gray;
+      color: #191444;
+    }
+  }
+}
+
+.details--container--service--light {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: dashed gray 1px;
+  .details--title {
+    color: #191444;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .details--value {
+    font-size: 0.7rem;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes BookDetails {
+  from {
+    transform: scale(0);
+  }
+}

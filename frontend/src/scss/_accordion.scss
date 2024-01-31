@@ -1,0 +1,63 @@
+.typography {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+
+  .accordion--title {
+    font-size: 12px;
+  }
+}
+.accordion--item--light {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 13px;
+  gap: 0.3rem;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(223, 223, 223, 0.708);
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: rgb(223, 223, 223);
+  }
+}
+
+.accordion--item--dark {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 13px;
+  gap: 0.3rem;
+  padding-left: 0.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  background-color: #4646464c;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: #4646467b;
+  }
+}
+.css-o4b71y-MuiAccordionSummary-content {
+  margin: 0 !important;
+}
+.Accordion--container--dark {
+  transition: all 0.5s !important;
+  background-color: #191444 !important;
+  color: white !important;
+
+  box-shadow: 0px 0px 5px rgb(218, 218, 218) !important;
+}
+.Accordion--container--light {
+  transition: all 0.5s;
+  background-color: white !important;
+}
+.stepper-backBtn--dark {
+  color: rgb(146, 146, 146) !important;
+}

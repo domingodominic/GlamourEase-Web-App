@@ -1,0 +1,102 @@
+.cssanimation,
+.cssanimation span {
+  color: white;
+  font-family: boldest;
+  font-size: 4rem;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.leMagnify span {
+  animation-name: leMagnify;
+}
+@keyframes leMagnify {
+  50% {
+    transform: scale(1.8);
+    letter-spacing: 26px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.logo--float {
+  height: 300px;
+
+  //   animation-delay: 1s;
+}
+
+.logo--floating {
+  animation-delay: 2s;
+  animation-name: logoFloat;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  animation-duration: 1.5s;
+}
+
+@keyframes logoFloat {
+  to {
+    opacity: 1;
+  }
+}
+
+//email loader
+
+.email--loader {
+  position: relative;
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 40px 60px 30px 60px;
+  border-color: pink rgba(244, 195, 203, 0.733) rgba(250, 205, 213, 0.651);
+  animation: envFloating 1s ease-in infinite alternate;
+}
+
+.email--loader:after {
+  content: "";
+  position: absolute;
+  right: 62px;
+  top: -40px;
+  height: 70px;
+  width: 50px;
+  background-image: linear-gradient(#7a7a7a 45px, transparent 0),
+    linear-gradient(#797979 45px, transparent 0),
+    linear-gradient(#838383 45px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 30px 4px;
+  background-position: 0px 11px, 8px 35px, 0px 60px;
+  animation: envDropping 0.75s linear infinite;
+}
+
+@keyframes envFloating {
+  0% {
+    transform: translate(-2px, -5px);
+  }
+
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes envDropping {
+  0% {
+    background-position: 100px 11px, 115px 35px, 105px 60px;
+    opacity: 1;
+  }
+
+  50% {
+    background-position: 0px 11px, 20px 35px, 5px 60px;
+  }
+
+  60% {
+    background-position: -30px 11px, 0px 35px, -10px 60px;
+  }
+
+  75%,
+  100% {
+    background-position: -30px 11px, -30px 35px, -30px 60px;
+    opacity: 0;
+  }
+}

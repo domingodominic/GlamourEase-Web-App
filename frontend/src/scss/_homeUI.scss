@@ -1,0 +1,214 @@
+@media (max-width: 800px) {
+  .header--logo {
+    margin: 0.9rem 0 0.5rem 0;
+    gap: 0.5rem;
+    .logo--name {
+      font-size: 15px;
+    }
+    .location {
+      font-size: 12px;
+    }
+    .logo--img {
+      img {
+        width: 40px;
+      }
+    }
+  }
+  .main--customer--page {
+    padding: 0 0.7rem;
+  }
+  .top--content {
+    align-items: center;
+    .appointmentList--title {
+      font-size: 13px;
+    }
+  }
+
+  .customer--appoinmentList-C2 {
+    padding: 0.7rem !important;
+  }
+
+  .list--dark,
+  .list--light {
+    padding: 0.3rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .list--dark .icon {
+    display: flex;
+    align-items: center;
+    font-size: 20px !important;
+  }
+  .service--details {
+    font-size: 10px !important;
+  }
+  .details {
+    gap: 0.4rem !important;
+    img {
+      width: 60px !important;
+    }
+  }
+  .main--content--light {
+    width: 100% !important;
+    height: 90% !important;
+    border-radius: 7px;
+    margin-top: 1.2rem;
+    display: static !important;
+  }
+
+  .main--content--dark {
+    width: 100% !important;
+    height: 90% !important;
+    border-radius: 7px;
+    margin-top: 1.2rem;
+    display: static !important;
+  }
+  .home--menu {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      padding: 10px 0;
+      border-radius: 10px;
+      padding: 10px 0px;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        margin: 0 !important;
+      }
+    }
+  }
+  .content--conatiner {
+    display: block;
+  }
+  .customer--footer {
+    padding: 1rem 0;
+    .footer--name {
+      font-size: 0.9rem;
+    }
+  }
+
+  //profile page
+
+  .profile--info--container {
+    margin: 0 1.3rem 0 1.3rem;
+
+    .profile--right--info {
+      padding: 30px 0px;
+    }
+  }
+  .image--container img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .customer--name {
+    font-size: 18px !important;
+  }
+
+  //stepper
+
+  .css-m5vj9m-MuiStepper-root {
+    display: none !important;
+  }
+  .css-u4p24i {
+    display: none !important;
+  }
+  .stepper--container {
+    max-height: 500px;
+    min-height: 500px;
+  }
+  //municipality page
+  .css-ucpse6 {
+    padding: 0.4rem !important;
+  }
+  .mb--municipality {
+    display: block !important;
+  }
+
+  //provider side
+  //service items
+  .service--list--header {
+    margin: 0 0.3rem 0 0.3rem !important;
+  }
+  .service--item--container {
+    padding: 0 5px !important;
+  }
+  .details img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  //date calendar
+
+  .css-1q04gal-MuiDateCalendar-root {
+    width: 280px !important;
+  }
+  //welcome page
+
+  .login--body {
+    padding: 1rem;
+  }
+  .fadein--btn {
+    padding: 10px 15px !important;
+  }
+  .reg--bg {
+    display: none;
+  }
+  //service button in provider page
+  .addService--btn {
+    padding: 5px 10px !important;
+    button {
+      font-size: 12px !important;
+    }
+  }
+  //table in provider showing customer list
+
+  .css-ptkaw2-MuiDataGrid-root {
+    width: 350px;
+  }
+  .providerService--mainContainer {
+    padding: 10px;
+  }
+
+  //notifivcation in provider
+
+  .notification--main--container {
+    padding: 0 0.7rem !important;
+
+    .notification--content {
+      font-style: italic;
+      font-size: 13px;
+    }
+  }
+  //open calendar in booking page select time and date
+  .open--calendar {
+    color: #ff9a9c;
+    text-align: end;
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+  .time--available--container {
+    padding: 0 !important;
+    flex-wrap: wrap;
+  }
+}
+
+.mb--municipality {
+  display: none;
+  .municipality--page--title {
+    text-align: start;
+    margin: 0;
+  }
+  p {
+    text-align: start;
+    font-size: 10px;
+  }
+}

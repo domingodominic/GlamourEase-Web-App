@@ -1,0 +1,51 @@
+.dialog--service--container {
+  display: flex;
+  margin: 0;
+  .dialog--details--title--light {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+  }
+  .dialog--service--container > p:first-child {
+    font-weight: bold;
+  }
+  .dialog--service--dark,
+  .dialog--description--light {
+    font-weight: bold;
+  }
+  .dialog--service--light {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 10px;
+    font-size: 13px;
+  }
+  .dialog--servicename--light,
+  .dialog--description--light,
+  .dialog--serviceprice--light {
+    font-weight: bold;
+  }
+}
+.dialog--details--title--light,
+.dialog--details--title--dark {
+  margin-bottom: 0;
+  color: #ff9a9c;
+  font-weight: bold;
+  border-bottom: #ff9a9c;
+}
+.timelist--container {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: start;
+}
+.timelist--items {
+  list-style: none;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #ff9a9c;
+}

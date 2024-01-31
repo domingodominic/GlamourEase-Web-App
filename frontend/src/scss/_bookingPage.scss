@@ -1,0 +1,126 @@
+$primary_color: #191444;
+
+.main--customer--page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100svh;
+  overflow: hidden;
+}
+.content--container--booking {
+  position: relative;
+  display: flex;
+  padding: 0;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2;
+
+  .main--content--booking {
+    position: relative;
+    overflow-y: scroll;
+    height: 80%;
+    width: 75%;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px #00698924;
+    color: #191444;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.header--logo {
+  display: flex;
+  grid-row: 1;
+  margin-top: 2rem;
+  justify-content: center;
+  color: #191444;
+  gap: 1rem;
+
+  .logo--img {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+    }
+  }
+  .location--name {
+    text-align: start;
+
+    .logo--name {
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+    .location {
+      margin: 0;
+    }
+  }
+}
+
+.home--menu {
+  position: absolute;
+  left: 7.5%;
+  z-index: 4;
+
+  ul {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: #ff9a9c;
+
+    li {
+      margin: 0;
+      list-style: none;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      font-size: 30px;
+      color: $primary_color;
+      &:hover {
+        color: #ff9a9c;
+      }
+    }
+  }
+}
+.customer--footer--booking {
+  grid-row: 3;
+
+  padding-bottom: 3rem;
+
+  .footer--name {
+    font-family: $font-family_4;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ff9a9c;
+    margin: 0;
+  }
+  .copyright {
+    margin: 0;
+    font-size: 0.8em;
+    color: gray;
+  }
+}
+
+.classname--rightslide {
+  animation-name: rightslide;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+@keyframes rightslide {
+  from {
+    transform: translateX(1000px);
+  }
+}
+
+.classname--leftslide {
+  animation-name: leftslide;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+@keyframes leftslide {
+  from {
+    transform: translateX(-1000px);
+  }
+}

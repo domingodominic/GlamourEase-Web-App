@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* CSS styles for the table */
+.table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Table header styles */
+.table th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 8px;
+}
+
+/* Table row styles */
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Alternate row background color for better readability */
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+.table tbody tr:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,63 @@
+@import "_welcomepage.scss";
+@import "_aboutus.scss";
+@import "_contacts.scss";
+@import "_otherSection.scss";
+@import "_login.scss";
+@import "_openLoader.scss";
+@import "_loginSpinner.scss";
+@import "_homeCustomer.scss";
+@import "_appointment.scss";
+@import "_bookingPage.scss";
+@import "_customerProfile.scss";
+@import "_bookDetails.scss";
+@import "_themeChanger.scss";
+@import "_accordion.scss";
+@import "_date.scss";
+@import "_provider.scss";
+@import "_municipalitySelection.scss";
+@import "_stepper.scss";
+@import "_reviewAppointment.scss";
+@import "_homeUI.scss";
+@import "_actions.scss";
+@import "_addButton.scss";
+@import "_customerList--provider--MB.scss";
+@import "_notification.scss";
+@import "_serviceDialogInfo.scss";
+@import "_predefined.scss";
+@import "_DesktopView.scss";
+:root {
+  --background-color: #ffff;
+  --color: #ff9a9c;
+}
+
+[lightmode] {
+  --background-color: #ffff;
+  --color: #ff9a9c;
+}
+[darkmode] {
+  --background-color: #191444;
+  --color: #ff9a9c;
+}
+
+//for darkmode
+.dark {
+  color: #ff9a9c !important;
+}
+.light {
+  color: #191444 !important;
+}
+.color--light {
+  color: #191444 !important;
+}
+.color--dark {
+  color: rgb(230, 230, 230);
+}
+
+.App--container--dark {
+  transition: all 0.5s;
+  background-color: #191444 !important;
+}
+.App--container--light {
+  transition: all 0.5s;
+  background-color: white !important;
+}

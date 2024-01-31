@@ -1,0 +1,93 @@
+.notification--main--container {
+  margin: 0;
+  padding: 0 3rem;
+  .notification--list--conatiner--light {
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 0.8rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    border-radius: 7px;
+    li {
+      display: flex;
+      text-align: start;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p {
+      text-align: start;
+      margin: 0;
+      margin-top: 5px;
+      font-style: italic;
+      font-size: 10px;
+      color: gray;
+    }
+    .notification--content {
+      font-style: italic;
+    }
+    .notification--icon {
+      font-size: 30px;
+    }
+  }
+  .notification--list--conatiner--dark {
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 0.8rem;
+    box-shadow: 0px 0px 5px rgba(250, 250, 250, 0.219);
+    padding: 20px 20px;
+    border-radius: 7px;
+    li {
+      display: flex;
+      text-align: start;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p {
+      text-align: start;
+      margin: 0;
+      margin-top: 5px;
+      font-style: italic;
+      font-size: 10px;
+      color: gray;
+    }
+    .notification--content {
+      font-style: italic;
+    }
+    .notification--icon {
+      font-size: 30px;
+    }
+  }
+}
+
+.notification--bell {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification--bell::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  border-radius: 100%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  z-index: 100;
+
+  background-color: rgb(228, 38, 38);
+}
+.rating--inputfield {
+  width: 90%;
+  padding: 5px 10px;
+  border: 1px solid gray;
+
+  &:focus,
+  &:active {
+    border: 1px solid pink;
+    outline: none; // This removes the default focus outline
+  }
+}

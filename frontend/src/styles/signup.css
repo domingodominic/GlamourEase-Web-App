@@ -1,0 +1,8 @@
+.heading {
+  animation: scrollDown 0.5s ease forwards;
+}
+@keyframes scrollDown {
+  from {
+    transform: translateY(-100px);
+  }
+}

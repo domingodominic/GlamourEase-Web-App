@@ -1,0 +1,70 @@
+.dialog--container {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.simple--fadein--btn {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #ff9a9c;
+  border-radius: 10px;
+  box-shadow: inset 0 -100px 0 0 #ff9a9c;
+}
+
+//provider service style
+
+.service--list--header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem 0 3rem;
+  align-items: center;
+}
+.button--container {
+  display: flex;
+  background-color: #ff9a9c;
+  color: white;
+  font-family: semi-bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+
+  button {
+    border: none;
+    color: white;
+    font-family: semi-bold;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}
+.available--service {
+  cursor: pointer;
+  &:hover {
+    box-shadow: inset 0 0 0 2px #ff9a9c;
+  }
+}
+.providerService--mainContainer {
+  padding: 10px 50px;
+}
+
+.css-gl260s-MuiDataGrid-columnHeadersInner {
+  background-color: #fdcfcf;
+}
+.MuiDataGrid-columnHeader {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0px 20px;
+}

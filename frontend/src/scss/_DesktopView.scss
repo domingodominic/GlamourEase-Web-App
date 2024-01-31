@@ -1,0 +1,120 @@
+@media (min-width: 800px) {
+  .hm--desktop--light {
+    position: relative;
+    left: 0%;
+    width: 18%;
+    height: 100%;
+
+    ul {
+      border-radius: 0%;
+      background: none;
+      padding: 0;
+
+      li {
+        padding: 1.9rem 0;
+        margin-top: 0;
+      }
+    }
+  }
+  .hm--desktop--dark {
+    position: relative;
+    left: 0%;
+    width: 18%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(176, 176, 176, 0.416);
+
+    ul {
+      border-radius: 0%;
+      background: none;
+      padding: 0;
+
+      li {
+        padding: 1.9rem 0;
+        margin-top: 0;
+      }
+    }
+  }
+  .content--conatiner .main--content--light,
+  .content--conatiner .main--content--dark {
+    width: 100%;
+    min-height: 770px;
+    max-height: 770px;
+  }
+  .main--content {
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.635);
+  }
+  .header--container--light {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 0;
+    padding-right: 1rem;
+    background-color: #fdcfcf;
+  }
+
+  .header--container--dark {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 0;
+    padding-right: 1rem;
+    box-shadow: 0 0 5px rgba(255, 192, 203, 0.295);
+  }
+  .header--greet {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-style: italic;
+    padding-right: 1rem;
+    border-right: 1px solid gray;
+  }
+  .logoname--desktop--light {
+    color: #ff9a9c;
+  }
+  .logoname--desktop--dark {
+    color: #ff9a9c;
+  }
+  .header--logo--container {
+    box-shadow: 0 0 5px rgba(255, 192, 203, 0.295);
+  }
+
+  .customer--appoinmentList-C2 {
+    padding: 2rem !important;
+  }
+  .providerService--mainContainer {
+    padding: 0px;
+  }
+  .scheduled--customerList--PP {
+    padding: 30px;
+  }
+  .notification--main--container {
+    padding: 0 1rem;
+  }
+  .service--item--container {
+    padding: 0 1rem !important;
+  }
+  .service--lists {
+    margin-top: 1rem;
+  }
+  .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-cell--textLeft,
+  .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+  .css-ptkaw2-MuiDataGrid-root .MuiDataGrid-columnHeader {
+    padding: 0 30px;
+  }
+  .css-gl260s-MuiDataGrid-columnHeadersInner
+    .css-yrdy0g-MuiDataGrid-columnHeaderRow {
+    width: 100%;
+  }
+  .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight) > .MuiDataGrid-cell {
+    justify-content: center;
+  }
+}

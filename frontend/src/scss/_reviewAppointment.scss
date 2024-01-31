@@ -1,0 +1,50 @@
+.review--title--light {
+  margin: 0;
+  color: #000000;
+  font-family: semi-bold;
+  text-align: start;
+}
+.review--title--dark {
+  margin: 0;
+  color: white;
+  font-family: semi-bold;
+}
+.review--subtitle--light {
+  font-size: 12px;
+  margin: 0;
+  text-align: start;
+  color: gray;
+}
+.review--subtitle--dark {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+.review--service--light {
+  font-size: 13px;
+  margin: 0;
+  text-align: start;
+  color: gray;
+}
+.review--service--dark {
+  margin: 0;
+  font-size: 13px;
+  color: gray;
+}
+
+.review--serviceinfo--light {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: start;
+}
+.review--serviceinfo--dark {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.review--divider {
+  padding: 10px 0px;
+  border-bottom: 2px dashed rgb(188, 188, 188);
+}
