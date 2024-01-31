@@ -17,7 +17,11 @@ import providerRouter from "./routes/providerRoute.js";
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:3001", "https://glamourease.vercel.app/"],
+  origin: [
+    "http://localhost:3001",
+    "https://glamourease.vercel.app/",
+    "https://glamourease.vercel.app",
+  ],
   methods: "PUT, POST, DELETE, GET",
   allowedHeaders: "Content-Type",
 };
