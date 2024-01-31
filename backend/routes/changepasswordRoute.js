@@ -1,5 +1,4 @@
 import express from "express";
-import bcrypt from "bcrypt";
 import { userAccount } from "../model/userAccountModel.js";
 import { customer } from "../model/customerModel.js";
 import { providermodel } from "../model/providermodel.js";
@@ -7,33 +6,6 @@ import { providermodel } from "../model/providermodel.js";
 const router = express.Router();
 
 // Change Pass
-router.put("/changePassword/:id", async (req, res) => {
-  const { id } = req.params;
-  const { newPassword } = req.body;
-  console.log("The password supplied is ", newPassword);
-
-  try {
-    const hashedPassword = await bcrypt.hash(newPassword, 12);
-
-    const user = await userAccount.findById(id);
-
-    if (!user) {
-      return res
-        .status(404)
-        .json({ success: false, message: "User not found" });
-    } else {
-      await userAccount.updateOne(
-        { _id: id },
-        { $set: { password: hashedPassword } }
-      );
-
-      res.json({ success: true, message: "Password updated successfully" });
-    }
-  } catch (error) {
-    console.error("An error occurred:", error);
-    res.status(500).json({ success: false, message: "An error occurred" });
-  }
-});
 
 // Update Profile Info
 router.put("/updateProfile/:id", async (req, res) => {

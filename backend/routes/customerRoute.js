@@ -2,7 +2,6 @@ import express, { request, response } from "express";
 import { customer } from "../model/customerModel.js";
 import { userAccount } from "../model/userAccountModel.js";
 import { providermodel } from "../model/providermodel.js";
-import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken"; // Import JWT library
 
 import route from "./providerRoute.js";
@@ -293,28 +292,5 @@ router.put("/updateProfile/:id", async (req, res) => {
 });
 
 // update ng password
-router.put("/updatePassword/:id", async (req, res) => {
-  const { id } = req.params;
-  const { newPassword } = req.body;
-
-  try {
-    // Hashing the new password
-    const hashedPassword = await bcrypt.hash(newPassword, 12);
-
-    const updatedUser = await userAccount.findByIdAndUpdate(id, {
-      password: hashedPassword,
-    });
-
-    if (!updatedUser) {
-      return res.status(404).json({ message: "User not found" });
-    }
-
-    res.json({ message: "Password updated successfully" });
-  } catch (error) {
-    res
-      .status(500)
-      .json({ message: "An error occurred", error: error.message });
-  }
-});
 
 export default router;

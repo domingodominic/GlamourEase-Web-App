@@ -1,7 +1,7 @@
 import { providermodel } from "../model/providermodel.js";
 import { userAccount } from "../model/userAccountModel.js";
 import express, { request, response } from "express";
-import bcrypt from "bcrypt";
+
 const route = express.Router();
 
 //route - provider
